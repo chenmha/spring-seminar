@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>春季Seminar会议日程</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9; /* 浅绿色背景，春季氛围 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .schedule-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 650px;
+            padding: 25px;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #c8e6c9; /* 春绿色边框 */
+        }
+        .schedule-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/flower-petal.png') repeat; /* 花瓣纹理背景 */
+            opacity: 0.1;
+            z-index: 0;
+        }
+        .schedule-card h2 {
+            text-align: center;
+            color: #2e7d32; /* 春绿色标题 */
+            margin-bottom: 10px;
+            font-size: 26px;
+            padding-bottom: 10px;
+            border-bottom: 2px dashed #f06292; /* 粉色虚线，春季活力 */
+            position: relative;
+            z-index: 1;
+        }
+        .datetime-location {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        .note {
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+            background-color: rgba(255, 245, 247, 0.8); /* 淡粉色背景 */
+            padding: 5px;
+            border-radius: 5px;
+            position: relative;
+            z-index: 1;
+        }
+        .session {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #e8f5e9;
+            transition: background-color 0.3s;
+            position: relative;
+            z-index: 1;
+        }
+        .session:hover {
+            background-color: #f1f8e9; /* 悬停时浅绿色 */
+        }
+        .session:last-child {
+            border-bottom: none;
+        }
+        .time {
+            font-weight: bold;
+            color: #f06292; /* 粉色时间，春季主题 */
+            width: 20%;
+        }
+        .details {
+            width: 80%;
+        }
+        .details span {
+            display: block;
+            margin: 5px 0;
+            color: #444;
+        }
+        .details .title {
+            font-weight: bold;
+            color: #2e7d32; /* 春绿色标题 */
+        }
+    </style>
+</head>
+<body>
+    <div class="schedule-card">
+        <h2>🌸 春季 Seminar 会议日程 🌱</h2>
+        <div class="datetime-location">时间：4月1日（星期二），地点：待定</div>
+        <div class="note">报告人25分钟，评论人15分钟，自由讨论10分钟</div>
+        <div class="session">
+            <div class="time">9:00-10:00</div>
+            <div class="details">
+                <span class="title">主动调整还是被动收缩：债券违约如何影响企业过度投资</span>
+                <span>报告人：曲铭棋</span>
+                <span>评论人：陈福康</span>
+            </div>
+        </div>
+        <div class="session">
+            <div class="time">10:00-11:00</div>
+            <div class="details">
+                <span class="title">中国银行业压力测试与银行信贷行为——基于测试范围拓展的准自然实验</span>
+                <span>报告人：牛国治</span>
+                <span>评论人：王正琪</span>
+            </div>
+        </div>
+        <div class="session">
+            <div class="time">11:00-12:00</div>
+            <div class="details">
+                <span class="title">Maturity-Driven Segmentation of Chinese Foreign Corporate Bonds</span>
+                <span>报告人：陈子上</span>
+                <span>评论人：王愉靖</span>
+            </div>
+        </div>
+        <div class="session">
+            <div class="time">12:00-13:00</div>
+            <div class="details">
+                <span class="title">午饭</span>
+            </div>
+        </div>
+        <div class="session">
+            <div class="time">13:30-14:30</div>
+            <div class="details">
+                <span class="title">Adaptation to Climate Risk: How Anomalous Precipitation Impacts Rural Entrepreneurship</span>
+                <span>报告人：贾咏琪</span>
+                <span>评论人：王慧</span>
+            </div>
+        </div>
+        <div class="session">
+            <div class="time">14:30-15:30</div>
+            <div class="details">
+                <span class="title">气候变化、交通运输与国际贸易</span>
+                <span>报告人：鲁嘉任</span>
+                <span>评论人：赵沛炫</span>
+            </div>
+        </div>
+        <div class="session">
+            <div class="time">15:30-16:30</div>
+            <div class="details">
+                <span class="title">银行金融科技与核心企业商业信用供给</span>
+                <span>报告人：田佳一</span>
+                <span>评论人：陈珉昊</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
